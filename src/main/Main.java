@@ -7,8 +7,10 @@ public class Main {
     public static void main(String[] args){
         SumPairInArray sumPairInArray = new SumPairInArray();
         PairSumEqualToRestOfArraySum psetroas = new PairSumEqualToRestOfArraySum();
+        PairWithGivenSum pairWithGivenSum = new PairWithGivenSum();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
+        countPairInAnArrayWithGivenSum(pairWithGivenSum);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -19,7 +21,14 @@ public class Main {
     }
 
     public static void findPairSumEqualsToRestOfArraySum(PairSumEqualToRestOfArraySum psetroas){
-        int[] arr= {4,6,8,3,1};
+        int[] arr= {2, 4, 2, 2, 2};
         psetroas.pairSumArraySum(arr);
+    }
+
+    public static void countPairInAnArrayWithGivenSum(PairWithGivenSum pairWithGivenSum) {
+        int[] arr = {1, 1, 1, 1};
+        int sum = 2;
+        int count = pairWithGivenSum.countPairInAnArrayWithGivenSum(arr, sum);
+        System.out.println(count);
     }
 }
