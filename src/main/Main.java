@@ -11,11 +11,13 @@ public class Main {
         PairWithGivenSum pairWithGivenSum = new PairWithGivenSum();
         FibonacciRecursive fb = new FibonacciRecursive();
         FibonacciIterative fbi = new FibonacciIterative();
+        MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray = new MaxDifferentBetweenTwoNumberInArray();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
         calculateFibonacciNumber(fb);
         calculateFibonacciNumber(fbi);
+        calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -25,7 +27,7 @@ public class Main {
         finalMap.entrySet().forEach(System.out::println);
     }
 
-    public static void findPairSumEqualsToRestOfArraySum(PairSumEqualToRestOfArraySum psetroas){
+    public static void findPairSumEqualsToRestOfArraySum(PairSumEqualToRestOfArraySum psetroas) {
         int[] arr= {2, 4, 2, 2, 2};
         psetroas.pairSumArraySum(arr);
     }
@@ -37,7 +39,7 @@ public class Main {
         System.out.println(count);
     }
 
-    public static void calculateFibonacciNumber(FibonacciRecursive fb){
+    public static void calculateFibonacciNumber(FibonacciRecursive fb) {
 
         int num = 7;
         int[] arr = fb.generateFibonacciSeries(num);
@@ -45,8 +47,14 @@ public class Main {
         System.out.println(fb.calculateFibonacciNumber(num));
     }
 
-    public static void calculateFibonacciNumber(FibonacciIterative fbi){
+    public static void calculateFibonacciNumber(FibonacciIterative fbi) {
         int num = 7;
         System.out.println(fbi.getFibonacciNumber(num));
+    }
+
+    public static void calculateMaxDiffInAnArray(MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray) {
+        int[] arr ={3,6,5,4,10,-1,9};
+        int diff = maxDifferentBetweenTwoNumberInArray.returnMaxDifferenceInAnArray(arr);
+        System.out.println("Diff "+diff);
     }
 }
