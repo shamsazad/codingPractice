@@ -1,5 +1,6 @@
 package main;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class Main {
@@ -8,9 +9,13 @@ public class Main {
         SumPairInArray sumPairInArray = new SumPairInArray();
         PairSumEqualToRestOfArraySum psetroas = new PairSumEqualToRestOfArraySum();
         PairWithGivenSum pairWithGivenSum = new PairWithGivenSum();
+        FibonacciRecursive fb = new FibonacciRecursive();
+        FibonacciIterative fbi = new FibonacciIterative();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
+        calculateFibonacciNumber(fb);
+        calculateFibonacciNumber(fbi);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -30,5 +35,18 @@ public class Main {
         int sum = 2;
         int count = pairWithGivenSum.countPairInAnArrayWithGivenSum(arr, sum);
         System.out.println(count);
+    }
+
+    public static void calculateFibonacciNumber(FibonacciRecursive fb){
+
+        int num = 7;
+        int[] arr = fb.generateFibonacciSeries(num);
+        Arrays.stream(arr).forEach(x->{System.out.println(x);});
+        System.out.println(fb.calculateFibonacciNumber(num));
+    }
+
+    public static void calculateFibonacciNumber(FibonacciIterative fbi){
+        int num = 7;
+        System.out.println(fbi.getFibonacciNumber(num));
     }
 }
