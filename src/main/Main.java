@@ -12,12 +12,14 @@ public class Main {
         FibonacciRecursive fb = new FibonacciRecursive();
         FibonacciIterative fbi = new FibonacciIterative();
         MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray = new MaxDifferentBetweenTwoNumberInArray();
+        Anagram anagram = new Anagram();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
         calculateFibonacciNumber(fb);
         calculateFibonacciNumber(fbi);
         calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
+        printAnagram(anagram);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -56,5 +58,10 @@ public class Main {
         int[] arr ={3,6,5,4,10,-1,9};
         int diff = maxDifferentBetweenTwoNumberInArray.returnMaxDifferenceInAnArray(arr);
         System.out.println("Diff "+diff);
+    }
+
+    public static void printAnagram(Anagram anagram) {
+        String s = "ABC";
+        anagram.printAnagram(s,0,s.length()-1);
     }
 }
