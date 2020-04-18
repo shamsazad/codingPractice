@@ -15,6 +15,7 @@ public class Main {
         MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray = new MaxDifferentBetweenTwoNumberInArray();
         Anagram anagram = new Anagram();
         DuplicateCharactersInString duplicateCharactersInString = new DuplicateCharactersInString();
+        StringReversalRecursive stringReversalRecursive = new StringReversalRecursive();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
@@ -23,6 +24,7 @@ public class Main {
         calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
         printAnagram(anagram);
         findDuplicateCharactersInString(duplicateCharactersInString);
+        reverseStringWithRecursion(stringReversalRecursive);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -72,6 +74,10 @@ public class Main {
         String s = "shams";
         List<Character> chars = duplicateCharactersInString.findDuplicateCharacterInString(s);
         System.out.println("The duplicate characters are" +chars);
+    }
 
+    public static void reverseStringWithRecursion(StringReversalRecursive stringReversalRecursive) {
+        String s = "Shams";
+        stringReversalRecursive.printStringReversal(s);
     }
 }
