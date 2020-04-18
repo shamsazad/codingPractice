@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -13,6 +14,7 @@ public class Main {
         FibonacciIterative fbi = new FibonacciIterative();
         MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray = new MaxDifferentBetweenTwoNumberInArray();
         Anagram anagram = new Anagram();
+        DuplicateCharactersInString duplicateCharactersInString = new DuplicateCharactersInString();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
@@ -20,6 +22,7 @@ public class Main {
         calculateFibonacciNumber(fbi);
         calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
         printAnagram(anagram);
+        findDuplicateCharactersInString(duplicateCharactersInString);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -63,5 +66,12 @@ public class Main {
     public static void printAnagram(Anagram anagram) {
         String s = "ABC";
         anagram.printAnagram(s,0,s.length()-1);
+    }
+
+    public static void findDuplicateCharactersInString(DuplicateCharactersInString duplicateCharactersInString) {
+        String s = "shams";
+        List<Character> chars = duplicateCharactersInString.findDuplicateCharacterInString(s);
+        System.out.println("The duplicate characters are" +chars);
+
     }
 }

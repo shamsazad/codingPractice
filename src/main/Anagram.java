@@ -8,11 +8,6 @@ public class Anagram {
         System.out.println("Inside Anagram");
         if (initial == len) {
             System.out.println(str);
-            try {
-                TimeUnit.SECONDS.sleep(2);
-            } catch (InterruptedException e) {
-                System.out.println(e);
-            }
         }
         else
         {
