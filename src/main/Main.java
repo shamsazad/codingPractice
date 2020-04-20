@@ -14,10 +14,12 @@ public class Main {
         FibonacciIterative fbi = new FibonacciIterative();
         MaxDifferentBetweenTwoNumberInArray maxDifferentBetweenTwoNumberInArray = new MaxDifferentBetweenTwoNumberInArray();
         Anagram anagram = new Anagram();
+        WordReversalInString wordReversalInString = new WordReversalInString();
         DuplicateCharactersInString duplicateCharactersInString = new DuplicateCharactersInString();
         StringReversalRecursive stringReversalRecursive = new StringReversalRecursive();
         NextGreaterNumber nextGreaterNumber = new NextGreaterNumber();
-       /* findSumPairInArray(sumPairInArray);
+        DuplicateRemovalSortedArray duplicateRemovalSortedArray = new DuplicateRemovalSortedArray();
+        findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
         calculateFibonacciNumber(fb);
@@ -25,8 +27,10 @@ public class Main {
         calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
         printAnagram(anagram);
         findDuplicateCharactersInString(duplicateCharactersInString);
-        reverseStringWithRecursion(stringReversalRecursive);*/
+        reverseStringWithRecursion(stringReversalRecursive);
         computeNextGreaterNumber(nextGreaterNumber);
+        reverseAllTheWordsInString(wordReversalInString);
+        removeDuplicatesFromSortedArray(duplicateRemovalSortedArray);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -87,5 +91,16 @@ public class Main {
         int num = 1234;
         int greaterNumber = nextGreaterNumber.computeNextGreaterNumber(num);
         System.out.println(greaterNumber);
+    }
+
+    public static void reverseAllTheWordsInString(WordReversalInString wordReversalInString) {
+        String s = "I am a student";
+        String reverseString = wordReversalInString.reverseWordInAString(s);
+        System.out.println(reverseString);
+    }
+
+    public static void removeDuplicatesFromSortedArray(DuplicateRemovalSortedArray duplicateRemovalSortedArray) {
+        int[] arr = {};
+        System.out.println(duplicateRemovalSortedArray.removeDuplicates(arr));
     }
 }
