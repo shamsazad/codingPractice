@@ -16,7 +16,8 @@ public class Main {
         Anagram anagram = new Anagram();
         DuplicateCharactersInString duplicateCharactersInString = new DuplicateCharactersInString();
         StringReversalRecursive stringReversalRecursive = new StringReversalRecursive();
-        findSumPairInArray(sumPairInArray);
+        NextGreaterNumber nextGreaterNumber = new NextGreaterNumber();
+       /* findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
         calculateFibonacciNumber(fb);
@@ -24,7 +25,8 @@ public class Main {
         calculateMaxDiffInAnArray(maxDifferentBetweenTwoNumberInArray);
         printAnagram(anagram);
         findDuplicateCharactersInString(duplicateCharactersInString);
-        reverseStringWithRecursion(stringReversalRecursive);
+        reverseStringWithRecursion(stringReversalRecursive);*/
+        computeNextGreaterNumber(nextGreaterNumber);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -79,5 +81,11 @@ public class Main {
     public static void reverseStringWithRecursion(StringReversalRecursive stringReversalRecursive) {
         String s = "Shams";
         stringReversalRecursive.printStringReversal(s);
+    }
+
+    public static void computeNextGreaterNumber(NextGreaterNumber nextGreaterNumber) {
+        int num = 1234;
+        int greaterNumber = nextGreaterNumber.computeNextGreaterNumber(num);
+        System.out.println(greaterNumber);
     }
 }
