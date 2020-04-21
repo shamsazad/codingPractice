@@ -1,8 +1,6 @@
 package main;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
 
@@ -19,6 +17,7 @@ public class Main {
         StringReversalRecursive stringReversalRecursive = new StringReversalRecursive();
         NextGreaterNumber nextGreaterNumber = new NextGreaterNumber();
         DuplicateRemovalSortedArray duplicateRemovalSortedArray = new DuplicateRemovalSortedArray();
+        StackWithArray stackWithArray = new StackWithArray();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
@@ -31,6 +30,7 @@ public class Main {
         computeNextGreaterNumber(nextGreaterNumber);
         reverseAllTheWordsInString(wordReversalInString);
         removeDuplicatesFromSortedArray(duplicateRemovalSortedArray);
+        stackImplementation(stackWithArray);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -102,5 +102,19 @@ public class Main {
     public static void removeDuplicatesFromSortedArray(DuplicateRemovalSortedArray duplicateRemovalSortedArray) {
         int[] arr = {};
         System.out.println(duplicateRemovalSortedArray.removeDuplicates(arr));
+    }
+
+    public static void stackImplementation(StackWithArray stackWithArray) {
+        stackWithArray.push(5);
+        stackWithArray.push(6);
+        stackWithArray.push(1);
+        stackWithArray.push(7);
+
+        System.out.println(stackWithArray.pop());
+        System.out.println(stackWithArray.pop());
+        System.out.println(stackWithArray.pop());
+        System.out.println(stackWithArray.pop());
+        System.out.println(stackWithArray.pop());
+
     }
 }
