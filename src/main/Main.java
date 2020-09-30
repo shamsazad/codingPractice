@@ -18,6 +18,7 @@ public class Main {
         NextGreaterNumber nextGreaterNumber = new NextGreaterNumber();
         DuplicateRemovalSortedArray duplicateRemovalSortedArray = new DuplicateRemovalSortedArray();
         StackWithArray stackWithArray = new StackWithArray();
+        MaximumShareProfit maximumShareProfit = new MaximumShareProfit();
         findSumPairInArray(sumPairInArray);
         findPairSumEqualsToRestOfArraySum(psetroas);
         countPairInAnArrayWithGivenSum(pairWithGivenSum);
@@ -31,6 +32,7 @@ public class Main {
         reverseAllTheWordsInString(wordReversalInString);
         removeDuplicatesFromSortedArray(duplicateRemovalSortedArray);
         stackImplementation(stackWithArray);
+        calculateMaximumProfitOfShares(maximumShareProfit);
     }
 
     public static void findSumPairInArray(SumPairInArray sumPairInArray) {
@@ -115,6 +117,13 @@ public class Main {
         System.out.println(stackWithArray.pop());
         System.out.println(stackWithArray.pop());
         System.out.println(stackWithArray.pop());
+    }
 
+    private static void calculateMaximumProfitOfShares(MaximumShareProfit maximumShareProfit) {
+        int[] arr = {100, 180, 260, 310, 40, 535, 695};
+        System.out.println(maximumShareProfit.calculateMaximumProfit(arr));
+        int[] array = {100, 180, 260, 310, 40, 535, 695};
+        int maxProfit = maximumShareProfit.calculateMaximumProfitEfficiently(array);
+        System.out.println("The maximum profit is "+maxProfit);
     }
 }
